@@ -24,5 +24,17 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int inputnumber = int.Parse(Num1.Text);
+            int squareNumber = inputnumber * inputnumber;
+            result.Content = squareNumber;
+        }
     }
 }
