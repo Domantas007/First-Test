@@ -22,19 +22,19 @@ namespace WpfApp1
     {
         public MainWindow()
         {
-            InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
+
+        private void num1btn_Copy(object sender, RoutedEventArgs e)
+        {
+            resultbox.Text = resultbox.Text + (Button)sender).Content;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void num1btn_Click(object sender, RoutedEventArgs e)
         {
-            int inputnumber = int.Parse(Num1.Text);
-            int squareNumber = inputnumber * inputnumber;
-            result.Content = squareNumber;
+
         }
     }
-}
+}    
+

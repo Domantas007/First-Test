@@ -6,10 +6,31 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBox x:Name="Num1" HorizontalAlignment="Left" Height="23" Margin="229,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <Label x:Name="result" Content="Label" HorizontalAlignment="Left" Margin="180,54,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="executebutton" Content="Button" HorizontalAlignment="Left" Margin="369,80,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    <Grid Margin="-254,0,0,-86" HorizontalAlignment="Right" Width="771">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="256*"/>
+            <ColumnDefinition Width="515*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Resultbox" HorizontalAlignment="Left" Height="26" Margin="10,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" RenderTransformOrigin="0.496,0.5" Grid.ColumnSpan="2" TextChanged="Resultbox_TextChanged"/>
+        <Button x:Name="num1btn" Content="2" HorizontalAlignment="Left" Margin="142,73,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Click"/>
+        <Button x:Name="num1btn_Copy" Content="1" HorizontalAlignment="Left" Margin="38,73,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.012"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="num3btn" Content="3" HorizontalAlignment="Left" Margin="2,73,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Click" IsEnabled="False" Grid.Column="1"/>
+        <Button x:Name="num4btn" Content="4" HorizontalAlignment="Left" Margin="41,113,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Copy"/>
+        <Button x:Name="num5btn" Content="5" HorizontalAlignment="Left" Margin="142,118,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Copy"/>
+        <Button x:Name="num6btn" Content="6" HorizontalAlignment="Left" Margin="3,113,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Grid.Column="1" Click="num1btn_Copy"/>
+        <Button x:Name="num7btn" Content="7" HorizontalAlignment="Left" Margin="41,163,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Copy"/>
+        <Button x:Name="num8btn" Content="8" HorizontalAlignment="Left" Margin="141,163,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="num1btn_Copy"/>
+        <Button x:Name="num9btn" Content="9" HorizontalAlignment="Left" Margin="2,163,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Grid.Column="1" Click="num1btn_Copy"/>
+        <Button x:Name="executebtn" Content="7" HorizontalAlignment="Left" Margin="141,241,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.4,-0.55" Click="executebtn_Click"/>
 
     </Grid>
 </Window>
